@@ -11,14 +11,14 @@ program fortran_mpi
     call MPI_COMM_SIZE(MPI_COMM_WORLD, size, ierr)
     call MPI_COMM_RANK(MPI_COMM_WORLD, rank, ierr)
 
-    call InitFileName()
+   ! call InitFileName()
 
     call dm%Init(17, 33, 33, 0.d0, 1.d0, 0.d0, 2.d0,0.d0,2.d0, 2, 2, 2)
-    call dm%Specify([0.2d0, 0.8d0], [0.1d0, 0.1d0, 0.3d0, 0.5d0])
+    call dm%Specify([0.2d0, 0.8d0], [0.5d0, 0.5d0],[0.5d0, 0.5d0])
     call dm%ShowAll()
     call dm%Show()
-    call dm%Save()
-    call dm%Dump()
+   ! call dm%Save()
+    !call dm%Dump()
 
     call MPI_FINALIZE(ierr)
 
