@@ -2,3 +2,7 @@
 plasma simulation 3d   
 schedule   
 test domain 3d
+
+使用方法：
+cd test
+sh ./setup.sh
