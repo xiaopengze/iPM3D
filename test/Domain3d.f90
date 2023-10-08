@@ -626,7 +626,7 @@ Module ModuleDomain3d
                 getImageIndex = domain_index(1) + domain_index(2) * image_shape(1)
 
             else if (3== domain_dim) then
-                getImageIndex = domain_index(1) + domain_index(2) * image_shape(1)+domain_index(2) * image_shape(1)* image_shape(2)
+                getImageIndex = domain_index(1) + domain_index(2) * image_shape(1)+domain_index(3) * image_shape(1)* image_shape(2)
             else
                 write(*, *) "The domain_dim must be in [1, 2]."
 
